@@ -1,4 +1,4 @@
-import 'package:firebase_database/firebase_database.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopping_app_with_provider/Component/constanttext.dart';

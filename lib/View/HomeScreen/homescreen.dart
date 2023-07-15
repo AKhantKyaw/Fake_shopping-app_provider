@@ -45,15 +45,15 @@ class _HomeScreenState extends State<HomeScreen> {
             return const ShoppingCart();
           })));
         },
-        child: Badge(
-          badgeColor: Colors.orange,
-          badgeContent: Text(context.read<DetailController>().cart.length.toString()),
-          child: const Icon(
-            Icons.shopping_bag,
-            color: Colors.black,
-          ),
-          position: BadgePosition.topEnd(top: -25, end: -20),
-        ),
+        // child: Badge(
+        //   badgeColor: Colors.orange,
+        //   badgeContent: Text(context.read<DetailController>().cart.length.toString()),
+        //   child: const Icon(
+        //     Icons.shopping_bag,
+        //     color: Colors.black,
+        //   ),
+        //   position: BadgePosition.topEnd(top: -25, end: -20),
+        // ),
         backgroundColor: Colors.lightGreen,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
