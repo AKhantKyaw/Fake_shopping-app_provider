@@ -146,4 +146,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - user_1@example.com
+          - aungkhantkyaw.dev@gmail.com
