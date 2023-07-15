@@ -29,7 +29,7 @@ class _LoginscreenState extends State<Loginscreen> {
   @override
   void _toggle() {
     setState(() {
-      obscureText = !obscureText;
+      obscureText =!obscureText;
     });
   }
 
