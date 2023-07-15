@@ -74,7 +74,7 @@ Future<void> successDialog(context) async {
             ],
           ),
         ),
-        actions: <Widget>[
+        actions: [
           TextButton(
             child: const Text(
               'Yes',
