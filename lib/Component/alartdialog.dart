@@ -19,7 +19,7 @@ Future<void> showMyDialog(context, index) async {
             ],
           ),
         ),
-        actions: <Widget>[
+        actions:[
           TextButton(
             child: const Text(
               'No',
