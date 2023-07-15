@@ -16,10 +16,10 @@ class _FavorateScreenState extends State<FavoriteScreen> {
         backgroundColor: const Color(0xffA6D1E6),
         title: const Text('Your Favorite'),
       ),
-      body: Column(
-        children: const [
-        ],
-      ),
+      // body: Column(
+      //   children: const [
+      //   ],
+      // ),
     );
   }
 }
