@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: const Color(0xffA6D1E6),
+      backgroundColor: const Color(0xffA6D1E6),
       body: witgetoption[currentindex!],
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -45,18 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
             return const ShoppingCart();
           })));
         },
-        child: Consumer<DetailController>(
-          builder: (context, value, child) {
-            return Badge(
-              badgeColor: Colors.orange,
-              badgeContent: Text(value.cart.length.toString()),
-              child: const Icon(
-                Icons.shopping_bag,
-                color: Colors.black,
-              ),
-              position: BadgePosition.topEnd(top: -25, end: -20),
-            );
-          },
+        child: Badge(
+          badgeColor: Colors.orange,
+          badgeContent: Text(context.read<DetailController>().cart.length.toString()),
+          child: const Icon(
+            Icons.shopping_bag,
+            color: Colors.black,
+          ),
+          position: BadgePosition.topEnd(top: -25, end: -20),
         ),
         backgroundColor: Colors.lightGreen,
       ),
