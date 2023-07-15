@@ -1,8 +1,5 @@
-import 'package:badges/badges.dart';
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:shopping_app_with_provider/Controller/DetailController/detailscreencontroller.dart';
 import 'package:shopping_app_with_provider/View/HomeScreen/favoratescreen.dart';
 import 'package:shopping_app_with_provider/View/HomeScreen/products_list.dart';
 import 'package:shopping_app_with_provider/View/HomeScreen/profile.dart';

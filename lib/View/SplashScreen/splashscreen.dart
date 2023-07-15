@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 import 'package:shopping_app_with_provider/Controller/DetailController/detailscreencontroller.dart';
 import 'package:shopping_app_with_provider/View/HomeScreen/homescreen.dart';
-import 'package:shopping_app_with_provider/View/HomeScreen/products_list.dart';
 import 'package:shopping_app_with_provider/View/Loginscreen/loginscreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +16,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Provider.of<DetailController>(context, listen: false).getprefesbool();
     });
     Timer(

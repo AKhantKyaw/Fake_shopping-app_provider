@@ -16,6 +16,7 @@ class UserAuthentication {
         email: email,
         password: password,
       );
+      print(newUser.additionalUserInfo);
       auth.currentUser!.updateDisplayName(name);
       status = AuthStatus.successful;
       print(status);
@@ -29,10 +30,11 @@ class UserAuthentication {
   Future<AuthStatus> login({
     required String email,
     required String password,
-    
   }) async {
     try {
-         UserCredential newUser =   await auth.signInWithEmailAndPassword(email: email, password: password);
+      UserCredential newUser = await auth.signInWithEmailAndPassword(
+          email: email, password: password);
+      print(newUser.additionalUserInfo);
       status = AuthStatus.successful;
       print(status);
     } on FirebaseAuthException catch (e) {
@@ -41,9 +43,11 @@ class UserAuthentication {
     }
     return status;
   }
+
   Future<void> logout() async {
     await auth.signOut();
-  } 
+  }
+
   Future<AuthStatus> resetPassword({required String email}) async {
     await auth
         .sendPasswordResetEmail(email: email)
@@ -53,5 +57,4 @@ class UserAuthentication {
 
     return status;
   }
-
 }

@@ -23,7 +23,7 @@ class _ProductsListState extends State<ProductsList> {
   bool isFavorite = false;
   @override
   void initState() {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Provider.of<DetailController>(context, listen: false).getData();
     });
     super.initState();
