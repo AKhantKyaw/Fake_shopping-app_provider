@@ -19,9 +19,9 @@ Future<void> showMyDialog(context, index) async {
             ],
           ),
         ),
-        actions:[
+        actions: <Widget>[
           TextButton(
-            child:  Text(
+            child: const Text(
               'No',
               style: TextStyle(color: Colors.red),
             ),
@@ -30,7 +30,7 @@ Future<void> showMyDialog(context, index) async {
             },
           ),
           TextButton(
-            child:  Text(
+            child: const Text(
               'Yes',
               style: TextStyle(color: Colors.red),
             ),
@@ -59,7 +59,7 @@ Future<void> successDialog(context) async {
         title: const Text('Payment'),
         content: SingleChildScrollView(
           child: ListBody(
-            children:  [
+            children: const <Widget>[
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
                 child: CircleAvatar(
@@ -67,16 +67,16 @@ Future<void> successDialog(context) async {
                   child: Center(
                     child: Icon(Icons.check),
                   ),
-                  backgroundColor: Colors.green
+                  backgroundColor: Colors.green,
                 ),
               ),
               Text('Payment Successfully'),
             ],
           ),
         ),
-        actions: [
+        actions: <Widget>[
           TextButton(
-            child:  Text(
+            child: const Text(
               'Yes',
               style: TextStyle(color: Colors.red),
             ),
